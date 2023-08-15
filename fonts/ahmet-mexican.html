@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexikanische Burritos</title>
+    <link rel="stylesheet" href="ahmet-rezeptstyle.css">
+    <link rel="stylesheet" href="btnStyle.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="mikaStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body onload="includeHTML()">
+
+    <!-------- HEADER ---------->
+
+    <div>
+        <script src="script.js"></script>
+        <div w3-include-html="./templates/header.html"></div>
+
+    </div>
+
+    <section class="firstSection">
+
+        <div class="div1">
+            <div class="headline-1">
+                <h1 class="h1s" id="headline">Mexikanische Burritos</h1><br>
+                <img class="recipe-picture" id="image" src="./img/mexican.jpg">
+                <!--euer bild vom rezept.jpg-->
+                <div class="headline-1-subline">
+                    <div class="headline-1-divs">
+                        <object data="img/icons/clock-regular.svg" width="16px" height="16px" title="zeit" ;></object>
+                        <spann class="icon-text">30 Min.</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/brain-solid.svg" width="16px" height="16px" title="zeit" ;></object>
+                        <spann class="icon-text" id="icon1">normal</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/calendar-alt-regular.svg" width="16px" height="16px" title="zeit"
+                            ;></object>
+                        <spann class="icon-text">06.05.2022</spann>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!--------- ZUTATEN LISTE --------->
+
+
+    <section class="secondSection">
+
+        <div class="zutaten-liste">
+            <div class="zutaten-liste1">
+
+                <div class="amount-picker">
+                    <spann id="text1">Zutaten für</spann>
+                    <input class="field-height" placeholder="1" type="number" min="1" id="personen">
+                    <button type="text" class="btn" id="button1">Portionen</button>
+                </div>
+
+                <div class="ingridiants">
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="200 g">
+                        <spann id="zutat1"> Tomaten, geschälte aus der Dose</spann>
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="125 g">
+                        <spann id="zutat2">Maiskörner</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="2">
+                        <spann id="zutat3"> Paprikaschote(n), rot und grün</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="2">
+                        <spann id="zutat4">Zwiebel(n)</spann>
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="4 EL">
+                        <spann id="zutat5">EL Olivenöl</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 Prise(n)">
+                        <spann id="zutat6">Cayennepfeffer</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="½ TL">
+                        <spann id="zutat7">Kreuzkümmelpulver</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 EL">
+                        <spann id="zutat8">Tomatenmark</spann>
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 Prise(n)">
+                        <spann id="zutat9">Zucker</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="6">
+                        <spann id="zutat10">Weizentortilla(s)</spann>
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="6 EL">
+                        <spann id="zutat11">Crème fraîche</spann>
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="200 g">
+                        <spann id="zutat12">Käse, gerieben</spann>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    </section>
+
+    <!--------- ZUBEREITUNG ---------->
+
+
+    <section class="thirdSection">
+
+        <div class="zubereitung1">
+            <h2 id="headline3">Zubereitung</h2>
+            <div class="headline-2-subline">
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text3">Arbeitszeit ca. 30 Minuten</spann>
+                </div>
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text4">Koch-/Backzeit ca. 20 Minuten</spann>
+                </div>
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text4">Gesamtzeit ca. 50 Minuten</spann>
+                </div>
+            </div>
+
+            <div class="step-and-picture">
+                <div class="zubereitung-text">
+                    Die Tomaten fein hacken und wieder in den Saft zurückgeben. Den Mais auf einem Sieb abtropfen
+                    lassen. Die Paprikaschoten putzen, entkernen, waschen, trocknen und in kleine Stücke schneiden. Die
+                    Zwiebeln schälen und würfeln. <br>
+                    <br>
+                    Das Olivenöl in einer Pfanne erhitzen und das Hackfleisch darin scharf anbraten. Zwiebeln und
+                    Paprika dazugeben und alles etwa 5 Minuten garen, bis das Fleisch durchgebraten ist. Mit Salz,
+                    Pfeffer, Cayennepfeffer und Kreuzkümmel kräftig würzen. Das Tomatenmark dazugeben, kurz mitrösten,
+                    dann die gehackten Tomaten mit dem Saft und den Mais unterrühren. Die Masse einige Minuten einkochen
+                    lassen, bis fast die gesamte Flüssigkeit verdampft ist. <br>
+                    <br>
+                    Mit den Gewürzen und etwas Zucker abschmecken. Die Tortillas mit der Crème fraîche bestreichen und
+                    die Hackfleischmasse gleichmäßig darauf verteilen. Mit etwas geriebenem Käse bestreuen. Die
+                    Tortillas zu Burritos aufrollen und in eine Auflaufform legen. <br>
+                    <br>
+                    Mit dem restlichen geriebenen Käse bestreuen und im auf 200 Grad vorgeheizten Backofen 4 - 5 Minuten
+                    überbacken, bis der Käse zerlaufen ist. Sofort servieren.
+                </div>
+            </div>
+
+            <div class="recipe-creator">
+                <h2 class="h5">Rezept erstellt von </h2>
+                <div class="profile-picture">
+                    <div>
+                        <img class="profile-picture1" src="./img/profile.png"><img>
+                    </div>
+                    <div>
+                        <span class="name">Ahmet Özkurt</span>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
+    <div w3-include-html="./templates/footer.html"></div>
+</body>
+
+
+</html>

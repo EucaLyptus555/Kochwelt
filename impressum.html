@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="mikaStyle.css">
+    <link rel="stylesheet" href="header.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin-left: 150px;
+            font-size: 1.0em;
+        }
+        h1{
+            margin-top: 80px;
+            margin-bottom: 80px;
+
+        }
+    </style>
+</head>
+
+<body onload="includeHTML()">
+    <script src="script.js"></script>
+
+    <div>
+        <div w3-include-html="./templates/header.html"></div>
+    </div>
+
+
+    <h1>Impressum</h1>
+    <h2 id="m46">Diensteanbieter</h2>
+    <p>Michal Wilde</p>
+    <p>Gewerbes. 4A</p>
+    <p>79639 Grenzach-Wyhlen</p>
+    <p>Deutschland</p>
+    <h2 id="m56">Kontaktmöglichkeiten</h2>E-Mail-Adresse: <p><a
+            href="mailto:michal.k.wilde@gmail.com">michal.k.wilde@gmail.com</a></p>
+    Telefon: 017662684547<br>
+
+
+   
+
+            <div>
+                <div w3-include-html="./templates/footer.html"></div>
+            </div>
+</body>
+
+</html>

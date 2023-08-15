@@ -1,0 +1,107 @@
+/**{
+    margin: 0;
+    font-family: sans-serif;
+}*/
+@font-face{
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('woff');
+}
+
+body{
+    font-family: 'Raleway';
+}
+
+.footerbox {
+    background-color: rgb(72, 72, 72);
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footerlinks{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.policity {
+    margin-bottom: 60px;
+    margin-right: 25px;
+}
+.policity a {
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: white;
+}
+.policity span {
+    color: white;
+}
+.footerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.footerImg span {
+    margin-bottom: 60px;
+    margin-left: 35px;
+    color: white;
+}
+.socialBox .socialImg {
+    background-color: rgb(72, 72, 72);
+    display: flex;
+    justify-content: space-between;
+}
+.footerlogo{
+    width: 300px;
+    height: 80px;
+    margin-left: 15px;
+    
+}
+.socialImg img {
+    margin-right: 40px;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+/****************************************************************************************************/
+@media(max-width:500px) {
+    .footerImg span {
+        margin-bottom: 60px;
+        margin-left: 35px;
+        color: white;
+    }
+    .policity {
+        font-size: 12px;
+        margin-bottom: 60px;
+        margin-right: 25px;
+    }
+    .policity a {
+        font-size: 12px;
+        text-decoration: none;
+        margin-right: 10px;
+        margin-left: 10px;
+        color: white;
+    }
+    .policity span {
+        color: white;
+        font-size: 12px;
+    }
+    .footerImg span {
+        margin-bottom: 60px;
+        margin-left: 35px;
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:1000px) {
+    .socialImg {
+        flex-direction: column;
+    }
+    .footerlogo {
+        margin-left: 0;
+    }
+}

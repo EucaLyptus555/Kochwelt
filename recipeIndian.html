@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="ahmet-rezeptstyle.css">
+    <link rel="stylesheet" href="btnStyle.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="mikaStyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <!-------- HEADER ---------->
+
+    <div w3-include-html="./templates/header.html"></div>
+
+    <section class="firstSection">
+
+        <div class="div1">
+            <div class="headline-1">
+                <h1 id="headline">Schnelles Spinat-Kichererbsen-Gericht</h1>
+                <img class="recipe-picture" id="image" src="img/kichererbsen.jpg">
+                <!--euer bild vom rezept.jpg-->
+                <div class="headline-1-subline">
+                    <div class="headline-1-divs">
+                        <object data="img/icons/clock-regular.svg" width="16px" height="16px" title="zeit" ;></object>
+                        <spann class="icon-text">30 Min.</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/brain-solid.svg" width="16px" height="16px" title="zeit" ;></object>
+                        <spann class="icon-text" id="icon1">simpel</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/calendar-alt-regular.svg" width="16px" height="16px" title="zeit"
+                            ;></object>
+                        <spann class="icon-text">05.05.22</spann>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!--------- ZUTATEN LISTE --------->
+
+
+    <section class="secondSection">
+
+        <div class="zutaten-liste">
+            <div class="zutaten-liste1">
+
+                <div class="amount-picker">
+                    <spann id="text1">Zutaten für</spann>
+                    <input class="field-height" placeholder="1 (euer rezept)" type="number" min="1" id="personen">
+                    <a href="#" class="btn">Portionen</a>
+                </div>
+
+                <div class="ingridiants">
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 Pck.">
+                        <spann id="zutat1">Blattspinat, TK</spann>
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="2">
+                        <spann id="zutat2">Zwiebeln</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="2">
+                        <spann id="zutat3">Knoblauchzehen</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="2">
+                        <spann id="zutat4">Tomaten</spann>
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 kl. Dose">
+                        <spann id="zutat5">Kichererbsen, abgetropft</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 kl. Stück">
+                        <spann id="zutat6">Ingwer</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 Dose">
+                        <spann id="zutat7">Kokosmilch</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="2 EL">
+                        <spann id="zutat8">Kokosöl</spann>
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="½ TL">
+                        <spann id="zutat9">Salzr</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="½ TL">
+                        <spann id="zutat10">Paprikapulver</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="½ TL">
+                        <spann id="zutat11">Kurukumapulver</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="½ TL">
+                        <spann id="zutat12">gerebelter Koriander</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="einige">
+                        <spann id="zutat13">Chilliflocken</spann>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+    </section>
+
+    <!--------- ZUBEREITUNG ---------->
+
+
+    <section class="thirdSection">
+
+        <div class="zubereitung1">
+            <h2 id="headline3">Zubereitung</h2>
+            <div class="headline-2-subline">
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text3">ca. 15 Minuten</spann>
+                </div>
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text4">Gesamtzeit ca. 30 Minuten</spann>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-and-picture">
+            <div class="zubereitung-text">
+                <span>Den Blattspinat auftauen (evtl. in der Mikrowelle) und das Wasser abgießen. Die Zwiebel, den Knoblauch und den Ingwer schälen. Die Tomaten am Stielansatz anschneiden, mit heißem Wasser übergießen und nach kurzer Zeit die Schale abziehen. Wenn es ganz schnell gehen soll, kann man auch gehackte Dosentomaten nehmen. Dafür 1/2 Dose verwenden, aber den Saft unbedingt abgießen, damit das Gericht keinen tomatigen Geschmack und keine rötliche Farbe annimmt.
+
+                    Die Zwiebel und die Tomaten in Würfel schneiden, (Dosentomaten abgießen), Knoblauch und Ingwer sehr fein hacken.
+                    
+                    In einer hohen Pfanne das Kokosöl erhitzen, Zwiebel, Knoblauch und Ingwer hineingeben und glasig dünsten. Spinat, Tomaten und Kokosmilch (inkl. dem Wasser) hineingeben, würzen, einmal gut umrühren und zudecken.
+                    
+                    Alles bei schwacher Hitze, leicht blubbernd ca. 10 Min köcheln lassen. Zum Schluss die Kichererbsen dazugeben, verrühren und kurz ziehen lassen. Eventuell nochmal abschmecken und mit Chiliflocken bestreut servieren. </span>
+            </div>
+        </div>
+
+        <div class="recipe-creator">
+            <h2 class="h5">Rezept erstellt von </h2>
+            <div class="profile-picture">
+                <img src="./img/Foto_Farbe_Hoch.jpg" class="photo">
+                <span>André</span>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+
+</html>

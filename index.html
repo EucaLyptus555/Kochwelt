@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="mikaStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="./btnStyle.css">
+    <!---<link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> --->
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    
+    <div w3-include-html="./templates/header.html"></div>
+
+    <section class="section1">
+        <img src="./img/spargel-schinken-auflauf.jpg" alt="">
+        <div class="description">
+            <h2>Spargel-Schinken-Auflauf</h2>
+            <p>Ein perfektes Rezept für die Spargel-Saison, welches den Spargel nocheinmal aufwertet und somit zu einer leckeren Mahlzeit für die ganze Familie wird.</p>
+            <a href="recipeAL.html" class="btn">Rezept öffnen</a>
+
+            
+        </div>
+    </section>
+    <section class="section2 bg1">
+        <h2>Internationale Gerichte</h2>
+        <div class="recipe">
+
+            <div>
+                <a href="moussaka.html">
+                    <img src="img/moussaka.jpg" alt="">
+                </a>
+                <p>Griechisches Moussaka</p>
+            </div>
+            <div>
+                <a href="ahmet-mexican.html">
+                    <img src="img/mexican.jpg" alt="">
+                </a>
+                <p>Mexikanische Burritos</p>
+            </div>
+
+
+            <div>
+                <a href="recipeIndian.html">
+                    <img src="img/kichererbsen.jpg">
+                </a>
+                <p>Schnelles <br>Spinat-Kichererbsen-Gericht</p>
+            </div>
+            <div>
+                <a href="mikaRecipe.html">
+                    <img src="img/tortilla.jpg">
+                </a>
+                <p>Mexikanischer<br>Bauernsalat</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="section3">
+        <h2>Kann man Spargel roh essen?</h2>
+        <div class="tips">
+            <p style="text-align:center;"> Glücklicherweise lautet die Antwort auf diese Frage: ja, ja und nochmals ja. Denn roher Spargel – ganz egal, ob grüner oder weißer Spargel – ist nicht nur essbar und ziemlich lecker, sondern auch noch besonders gesund. Beim Zubereiten, Kochen, Garen und Braten von Spargel gehen nämlich viele wertvolle Vitamine und Mineralien verloren. Wenn ihr Spargel roh esst, könnt ihr jedoch besonders viel davon aufnehmen, so zum Beispiel Vitamin C und Folsäure, die in rohem Spargel in hohen Konzentrationen zu finden sind.
+
+                Außerdem wirkt roher Spargel entgiftend, harntreibend und enthält viel Wasser, das euch dabei hilft, euren Körper mit Flüssigkeit zu versorgen und die Nieren durchzuspülen. Und wenn euch das noch nicht überzeugt, tut es spätestens das erfrischend knackige, saftige Genusserlebnis von rohem Spargel. Probiert es mal aus und vertraut uns: Roher Spargel ist nicht giftig! Ihr solltet ihn nur gründlich abwaschen und ggf. schälen.</p>
+            <img src="./img/Spargel.jpg">
+        </div>
+    </section>
+
+
+
+
+
+    <div>
+        <div w3-include-html="./templates/footer.html"></div>
+    </div>
+</body>
+
+</html>

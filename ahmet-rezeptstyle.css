@@ -1,0 +1,370 @@
+
+/* ------------ Euer Rezept ---------- */
+@font-face{
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('woff');
+}
+
+body {
+    font-family: 'Raleway';
+}
+
+.div1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px 100px;
+}
+
+.icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.headline-1 {
+    margin-top: 100px;
+    font-size: 16px;
+    
+}
+
+.headline-1-subline {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.headline-2-subline {
+    display: flex;
+    justify-content: center;
+    margin: 20px 100px;
+    
+}
+
+.headline-1-icons {
+    width: 20px;
+    margin: 0px 10px;
+}
+
+.icon-text {
+    margin: 0 10px;
+}
+
+.headline-1-divs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(221, 221, 221, 0.863);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.recipe-picture {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 75px;
+}
+
+/*---------- ZUTATEN LISTE ---------*/
+
+.zutaten-liste {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px 100px;
+}
+
+.input-amount-numbers {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+  
+    border: none;
+    padding-left: 15px;
+    text-align: end;
+    background-color: transparent;
+}
+
+
+/* ----------- PORTIONEN ANZAHL --------- */
+
+.amount-picker {
+    margin: 30px 0;
+    font-size: 16px;
+    
+}
+
+.field-height {
+    height: 39px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+/* ------------- ZUTATEN LISTE ANZAHL  -------- */
+
+.zutaten-balken-grau {
+    background-color: rgba(221, 221, 221, 0.863);
+    padding: 15px 0px 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+
+
+}
+
+.zutaten-balken-weiss {
+    color: #00000069;
+    padding: 15px 0px 15px 30px;
+    font-size: 16px;
+
+}
+/* --------------- ZUBEREITUNG ---------- */
+
+
+
+.step-and-picture {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px 100px;
+}
+
+.step-sideway-picture {
+    width: 300px;
+    height: 300px;
+    margin: 0 80px;
+    border: solid 1px black;
+    border-radius: 130px;
+    object-fit: cover;
+}
+
+.zubereitung1 h2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px 100px;
+}
+
+.zubereitung-text {
+    color: #00000069;
+
+}
+
+
+/* -----------------  ERSTELLER --------- */
+
+.recipe-creator h2{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px 100px;
+}
+
+.profile-picture {
+    margin: 20px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding-right: 20px;
+    object-fit: cover;
+}
+
+.h5 {
+    font-size: 16px;
+
+}
+
+.name {
+    color: #00000069;
+
+    align-items: row;
+}
+
+.photo {
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.invisible {
+    display: none;
+}
+
+.recipetable2 td { 
+    padding: 5px 5px 5px 5px;
+}
+
+.recipetable2 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recipetable {
+    text-align: right;
+}
+
+@media(max-width: 1000px) {
+
+
+    .field-height{
+        margin-left: 0px;
+    }
+    .hide-mobile {
+        display: none;
+    }
+
+    .h1s {
+        color: #000000bd;
+
+    display: flex;
+    justify-content: center;
+    }
+
+    .headline3 {
+        color: #000000bd;
+
+    }
+    .recipe-picture {
+        display: flex;
+        align-items: center;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .headline-1-subline {
+        display: flex;
+        margin-right: 70px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headline-2-subline {
+        display: flex;
+        margin-right: 70px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .headline-1-divs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 21px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(221, 221, 221, 0.863);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+
+.div1 {
+    margin: 20px 30px;
+}
+
+.zutaten-balken-grau {
+    width: 100%;
+    font-size: 15px;
+    padding-left: 10px;
+
+
+}
+.zutaten-balken-weiss {
+    width: 100%;
+    font-size: 15px;
+    color: #00000069;
+
+
+}
+
+.secondSection {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.input-amount-numbers {
+    width: 70px;
+    height: 20px;
+    font-size: 15px;
+    padding-left: 0px;
+}
+.amount-picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 60px;
+
+}
+.socialBox {
+    background-color: rgb(72, 72, 72);
+    display: flex;
+    justify-content: center;
+} 
+
+.zubereitung-text {
+    color: #00000069;
+
+}
+
+.socialImg {
+    display: flex;
+    justify-content: center;
+}
+
+.zutaten-liste {
+    margin: 0px 51px;
+}
+
+.zubereitung1 h2 {
+    margin-top: 40px;
+}
+
+span.name {
+    color: #00000069;
+
+}
+
+}
+
+@media (max-width:400px) {
+    .step-and-picture {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .zubereitung1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-creator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headline-1-divs {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="ahmet-rezeptstyle.css">
+    <link rel="stylesheet" href="btnStyle.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="mikaStyle.css">
+    <!---<link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> --->
+   
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML(), buildArray()">
+
+    <!-------- HEADER ---------->
+
+    <div w3-include-html="./templates/header.html"></div>
+
+    <section class="firstSection">
+
+        <div class="div1">
+            <div class="headline-1">
+                <h1 id="headline">Spargel-Schinken-Auflauf</h1>
+                <img class="recipe-picture" id="image" src="img/spargel-schinken-auflauf2.jpg">
+                <!--euer bild vom rezept.jpg-->
+                <div class="headline-1-subline">
+                    <div class="headline-1-divs">
+                        <object data="img/icons/clock-regular.svg" width="16px" height="16px" title="zeit" ;></object>
+                        <spann class="icon-text">30 Min.</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/brain-solid.svg" width="16px" height="16px" title="zeit" ;></object>
+                        <spann class="icon-text" id="icon1">simpel</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/calendar-alt-regular.svg" width="16px" height="16px" title="zeit"
+                            ;></object>
+                        <spann class="icon-text">05.05.22</spann>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+
+    <!--------- ZUTATEN LISTE --------->
+
+
+    <section class="secondSection">
+
+        <div class="zutaten-liste">
+            <div class="zutaten-liste1">
+
+                <div class="amount-picker">
+                    <spann id="text1">Zutaten für</spann>
+                    <input class="field-height" placeholder="1 (euer rezept)" type="number" min="1" id="personen">
+                    <a href="#" class="btn" onclick="calc()">Portionen</a>
+                </div>
+
+                <div class="ingridiants">
+                    <table class="recipetable2">
+                        <tr class="zutaten-balken-grau" id="zutat1">
+                            <td class="recipetable" id="0">1</td>
+                            <td>kg</td>
+                            <td>Spargel</td>
+                        </tr>
+                        <tr class="zutaten-balken-weiß" id="zutat2">
+                            <td class="recipetable" id="1">200</td>
+                            <td>g</td>
+                            <td>Kochschinken</td>
+                        </tr>
+                        <tr class="zutaten-balken-grau" id="zutat3">
+                            <td class="recipetable" id="2">100</td>
+                            <td>g</td>
+                            <td>margerer Rohschinken</td>
+                        </tr>
+                        <tr class="zutaten-balken-weiß" id="zutat4">
+                            <td class="recipetable" id="3">3</td>
+                            <td></td>
+                            <td>Eier</td>
+                        </tr>
+                        <tr class="zutaten-balken-grau" id="zutat5">
+                            <td class="recipetable" id="4">1</td>
+                            <td>Becher</td>
+                            <td>Sahne</td>
+                        </tr>
+                        <tr class="zutaten-balken-weiß" id="zutat6">
+                            <td class="recipetable" id="5">200</td>
+                            <td>g</td>
+                            <td>Reibekäse</td>
+                        </tr>
+                        <tr class="zutaten-balken-grau" id="zutat7">
+                            <td class="recipetable" id="6"></td>
+                            <td>etwas</td>
+                            <td>Salz & Pfeff</td>
+                        </tr>
+                        <tr class="zutaten-balken-weiß" id="zutat8">
+                            <td class="recipetable" id="7"></td>
+                            <td>etwas</td>
+                            <td>Muskatnuss</td>
+                        </tr>
+                        <tr class="zutaten-balken-grau" id="zutat9">
+                            <td class="recipetable" id="8">1</td>
+                            <td>TL</td>
+                            <td>Zucker</td>
+                        </tr>
+                        <tr class="zutaten-balken-weiß" id="zutat10">
+                            <td class="recipetable" id="9">20</td>
+                            <td>g</td>
+                            <td>Butter</td>
+                        </tr>
+                        <tr class="zutaten-balken-grau" id="zutat11">
+                            <td class="recipetable" id="10">2</td>
+                            <td>TL</td>
+                            <td>Schnittlauchröllchen</td>
+                        </tr>
+                        <tr class="zutaten-balken-weiß" id="zutat12">
+                            <td class="recipetable" id="11"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                </div> 
+            </div>
+            <hr>
+    </section>
+    <section class="thirdSection">
+
+        <div class="zubereitung1">
+            <h2 id="headline3">Zubereitung</h2>
+            <div class="headline-2-subline">
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text3">ca. 25 Minuten</spann>
+                </div>
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text4">Gesamtzeit ca. 25 Minuten</spann>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-and-picture">
+            <div class="zubereitung-text">
+                <span>Den Spargel schälen (bei grünem Spargel nur die Ende abschneiden) und in 5 cm-lange Stücke
+                    schneiden. In Wasser mit Zucker und etwas Salz ca. 10-15 Minuten bissfest garen.
+                    In der Zwischenzeit die beiden Schinkensorten in feine Streifen schneiden und in der Pfanne mit der
+                    Hälfte der Butter anbraten. Dann den Spargel abgießen und abtropfen lassen. Eine Auflaufform mit der
+                    restlichen Butter einfetten und die Spargelstücke hineingeben, den Schinken untermischen. Nun die
+                    Eier mit der Sahne, Muskatnuss, Pfeffer und etwas Salz verrühren (wer mag, gibt die
+                    Schnittlauchröllchen dazu) und über den Spargel gießen. Den Auflauf ca. 15 Minuten im Backofen bei
+                    200°C überbacken. Den Käse erst 5 Minuten vor Ende der Backzeit drüberstreuen.
+                    Wir essen den Auflauf als Hauptgericht mit Baguette und einem frischen Blattsalat dazu. </span>
+            </div>
+        </div>
+
+        <div class="recipe-creator">
+            <h2 class="h5">Rezept erstellt von </h2>
+            <div class="profile-picture">
+                <img src="./img/Foto_Farbe_Hoch.jpg" class="photo">
+                <span>André</span>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+
+</html>

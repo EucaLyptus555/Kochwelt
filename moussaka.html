@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griechisches Moussaka</title>
+    <link rel="stylesheet" href="./ahmet-rezeptstyle.css">
+    <link rel="stylesheet" href="./btnStyle.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="mikaStyle.css">
+    
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+
+</head>
+
+<body onload="includeHTML()">
+
+    <script src="script.js"></script>
+    <div w3-include-html="./templates/header.html"></div>
+
+    <section class="firstSection">
+
+        <div class="div1">
+            <div class="headline-1">
+                <h1 id="headline">Griechisches Moussaka</h1>
+                <img class="recipe-picture" id="image" src="./img/moussaka.jpg">
+                <div class="headline-1-subline">
+                    <div class="headline-1-divs">
+                        <object data="img/icons/clock-regular.svg" width="16px" height="16px" title="zeit" ;></object>
+                        <spann class="icon-text">25 Min.</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/brain-solid.svg" width="16px" height="16px" title="zeit" ;></object>
+                        <spann class="icon-text" id="icon1">simpel</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/calendar-alt-regular.svg" width="16px" height="16px" title="zeit"
+                            ;></object>
+                        <spann class="icon-text">05.05.22</spann>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+
+
+
+    <section class="secondSection">
+
+        <div class="zutaten-liste">
+            <div class="zutaten-liste1">
+
+                <div class="amount-picker">
+                    <spann id="text1">Zutaten für</spann>
+                    <input class="field-height" placeholder="1 (euer rezept)" type="number" min="1" id="personen">
+                    <a href="#" class="btn">Portionen</a>
+                </div>
+
+                <div class="ingridiants">
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="600g">
+                        <spann id="zutat1">Kartoffel(n), geschält in feine Scheiben geschnitten</spann>
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="600g">
+                        <spann id="zutat2">Aubergine(n) vom Stielansatz befreit, in 2mm feine Scheiben geschnitten
+                        </spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="500g">
+                        <spann id="zutat3">Hackfleisch, bevorzugt Lamm</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="2">
+                        <spann id="zutat4">Zwiebel(n), fein gehackt</spann>
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="4">
+                        <spann id="zutat5">Knoblauchzehe(n), fein gehackt</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1gr. Dose">
+                        <spann id="zutat6">Tomate(n) geschält ohne Saft</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1">
+                        <spann id="zutat7">Lorbeerblatt</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="¼ TL">
+                        <spann id="zutat8">Zimt</spann>
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="">
+                        <spann id="zutat9">Salz und Pfeffer</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="4">
+                        <spann id="zutat10">Ei(er)</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="40g">
+                        <spann id="zutat11">Butter</spann>
+
+                    </div>
+
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="40g">
+                        <spann id="zutat12">Mehl</spann>
+
+                    </div>
+
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="375ml">
+                        <spann id="zutat13">Milch</spann>
+
+                    </div>
+
+
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="100g">
+                        <spann id="zutat14">Parmesan oder anderen geriebenen Käse</spann>
+
+                    </div>
+                    <div class="zutaten-balken-grau">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="">
+                        <spann id="zutat15">Olivenöl</spann>
+
+                    </div>
+                    <div class="zutaten-balken-weiss">
+                        <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="">
+                        <spann id="zutat13">Muskat</spann>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <hr>
+    </section>
+
+
+    <section class="thirdSection">
+
+        <div class="zubereitung1">
+            <h2 id="headline3">Zubereitung</h2>
+
+            <div class="headline-2-subline">
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text3">Arbeitszeit ca. 2 Stunden</spann>
+                </div>
+                <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px"
+                        title="zeit" ;></object>
+                    <spann class="icon-text" id="text4">Ruhezeit ca. 30 Minuten</spann>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="step-and-picture">
+            <div class="zubereitung-text">
+                <span>Auberginen salzen, 30 Minuten stehen lassen. Anschließend sorgfältig trocken tupfen. Öl in einer
+                    Pfanne erhitzen. Die Scheiben von jeder Seite ca. 30 Sekunden anbraten. Herausnehmen und auf
+                    Küchenpapier abtropfen lassen. Erneut Öl in der Pfanne erhitzen und die Kartoffelscheiben unter mehrmaligem Wenden 10 Minuten
+                    anbraten. <br>
+                    <br>
+                    In einem Topf etwas Öl erhitzen, Fleisch, Zwiebeln und Knoblauch darin anbraten. Tomaten zufügen und
+                    etwas zerkleinern. Mit Lorbeer, Zimt, Salz, Pfeffer und Muskatnuss würzen. Unter ständigem Rühren
+                    bei geöffnetem Topf so lange dünsten, bis sämtliche Flüssigkeit verkocht ist. Das Lorbeerblatt
+                    entfernen, nochmals abschmecken. <br>
+                    <br>
+                    Den Topf vom Herd nehmen und 2 Eier unterrühren. In einem zweiten Topf die Butter zerlassen. Mit Mehl bestäuben und kurz anschwitzen. 
+                    Nach und nach die Milch zugießen und unter Rühren dicklich einkochen lassen. Mit Salz, Pfeffer und Muskatnuss
+                    pikant abschmecken. Den Topf vom Herd nehmen, einen Esslöffel Käse und die restlichen Eier
+                    hineinrühren. Eine große, flache Auflaufform mit Olivenöl fetten. <br>
+                    <br>
+                    Die Hälfte der Kartoffeln und Auberginen
+                    einfüllen. Mit Salz, Pfeffer und Muskatnuss würzen und mit etwas Käse bestreuen. Anschließend die
+                    Hackfleischmasse gleichmäßig darauf verteilen. Die restlichen Kartoffeln und Auberginen darauf geben
+                    und mit der Sauce begießen. Mit Käse bestreuen.Die Moussaka bei 180 °C Umluft im vorgeheizten Backofen 30 - 40 Minuten backen.</span>
+            </div>
+        </div>
+
+        <div class="recipe-creator">
+            <h2 class="h5">Rezept erstellt von </h2>
+            <div class="profile-picture">
+                <img src="./img/profile.png" class="photo">
+                <span>Matthias</span>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+
+</html>

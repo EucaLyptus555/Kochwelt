@@ -1,0 +1,204 @@
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rezept des Tages</title>
+        <link rel="stylesheet" href="./ahmet-rezeptstyle.css">
+        <link rel="stylesheet" href="./btnStyle.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="mikaStyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    
+    <body onload="includeHTML()">
+    
+                                <!-------- HEADER ---------->
+    
+    <div w3-include-html="./templates/header.html"></div>
+
+    <section class="firstSection">
+    
+        <div class="div1">
+            <div class="headline-1">
+                <h1 id="headline">Mexikanischer Bauernsalat</h1>
+                <img class="recipe-picture" id="image" src="img/tortilla.jpg">  <!--euer bild vom rezept.jpg-->
+                <div class="headline-1-subline">
+                    <div class="headline-1-divs">
+                        <object data="img/icons/clock-regular.svg" width="16px" height="16px" title="zeit";></object>
+                        <spann class="icon-text">25 Min.</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/brain-solid.svg" width="16px" height="16px" title="zeit";></object>
+                        <spann class="icon-text" id="icon1">simpel</spann>
+                    </div>
+                    <div class="headline-1-divs">
+                        <object data="img/icons/calendar-alt-regular.svg" width="16px" height="16px" title="zeit";></object>
+                        <spann class="icon-text">05.05.22</spann>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </section>
+    
+                        <!--------- ZUTATEN LISTE --------->
+    
+    
+    <section class="secondSection">
+    
+                    <div class="zutaten-liste">
+                        <div class="zutaten-liste1">
+            
+                            <div class="amount-picker">
+                                <spann id="text1">Zutaten für</spann>
+                                <input class="field-height" placeholder="1 (euer rezept)" type="number" min="1" id="personen">
+                                <a href="#" class="btn">Portionen</a>
+                            </div>
+            
+                            <div class="ingridiants">
+                                <div class="zutaten-balken-grau">
+                                <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 ">
+                                        <spann id="zutat1">Paprika, gelb</spann>
+                                </div>
+                                <div class="zutaten-balken-weiss">
+                                <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 ">
+                                        <spann id="zutat2">Paprika, rot</spann>
+    
+                                </div>
+                                <div class="zutaten-balken-grau">
+                                <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 ">
+                                        <spann id="zutat3">Paprika, grün</spann>
+    
+                                </div>
+                                <div class="zutaten-balken-weiss">
+                                    <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="3 ">
+                                        <spann id="zutat4">Chilischote(n), rot</spann>
+                                </div>
+                                <div class="zutaten-balken-grau">
+                              <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 ">
+                                        <spann id="zutat5">Gemüsezwiebel</spann>
+                          
+                                </div>
+                                <div class="zutaten-balken-weiss">
+                               <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="200 g ">
+                                        <spann id="zutat6">Mais</spann>
+                        
+                                </div>
+                                <div class="zutaten-balken-grau">
+                             <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="200 g ">
+                                        <spann id="zutat7">Kidneybohnen</spann>
+                               
+                                </div>
+                                <div class="zutaten-balken-weiss">
+                                    <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 ">
+                                    <spann id="zutat8">geriebener Muskat</spann>
+                                </div>
+                                <div class="zutaten-balken-grau">
+                                    <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="3 g ">
+                                               <spann id="zutat7">Salz</spann>
+                                      
+                                       </div>
+                                <div class="amount-picker">
+                                    <spann id="text1">Für die Marinade:</spann>
+                                </div>
+
+                                <div class="zutaten-balken-grau">
+                            <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 ">
+                                        <spann id="zutat9">1 Limette, davon den Saft</spann>
+                          
+                                </div>
+                                <div class="zutaten-balken-weiss">
+                              <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="4 EL ">
+                                        <spann id="zutat10">livenöl</spann>
+                             
+                                </div>
+                                <div class="zutaten-balken-grau">
+                                    <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="2 ">
+                                                <spann id="zutat9">Zehen Knoblauch</spann>
+                                  
+                                        </div>
+
+                                        <div class="amount-picker">
+                                            <spann id="text1">Für den Dip:</spann>
+                                        </div>
+        
+                                        <div class="zutaten-balken-grau">
+                                    <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="100 g ">
+                                                <spann id="zutat9">Sauerrahm</spann>
+                                  
+                                        </div>
+                                        <div class="zutaten-balken-weiss">
+                                      <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="1 EL ">
+                                                <spann id="zutat10">Limettensaft</spann>
+                                     
+                                        </div>
+                                        <div class="zutaten-balken-grau">
+                                            <input type="text" id="ZUTAT" class="input-amount-numbers" placeholder="¼ ">
+                                                        <spann id="zutat9">Eisbergsalat oder Kopfsalat</spann>
+                                          
+                                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+            <hr>
+    </section>
+    
+                    <!--------- ZUBEREITUNG ---------->
+    
+    
+    <section class="thirdSection">
+    
+                    <div class="zubereitung1">
+                        <h2 id="headline3">Zubereitung</h2>
+                        <div class="headline-2-subline">
+                            <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px" title="zeit";></object>
+                                <spann class="icon-text" id="text3">ca. 25 Minuten</spann>
+                            </div>
+                            <div class="headline-1-divs"><object data="img/icons/clock-regular.svg" width="16px" height="16px" title="zeit";></object>
+                                <spann class="icon-text" id="text4">Gesamtzeit ca. 25 Minuten</spann>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="step-and-picture">
+                        <div class="zubereitung-text">
+                            <span><p>Die Paprika entkernen und klein würfeln. Die Chilischoten entkernen und fein hacken. Die Gemüsezwiebel schälen, vierteln und in dünne Scheiben schneiden. Den Mais und die Bohnen in ein Sieb geben, abspülen und abtropfen lassen. Alle Zutaten in einer Schüssel mischen.</p> <br>
+
+                               <p> Für die Marinade:
+                                Limettensaft, Olivenöl, Gemüsebrühe, Rotweinessig, Worcestersauce, Salz und Pfeffer verrühren, Knoblauch darüberpressen, über den Salat gießen und ziehen lassen.</p><br>
+                                
+                                <p>Für den Dip:
+                                Den Sauerrahm, Limettensaft, -abrieb, Salz, Pfeffer und gehackte Petersilie verrühren.</p> <br>
+                                
+                                <p>Den Blattsalat mit den anderen Salatzutaten mischen, den Dip darübergeben und mit den Erdnüssen bestreuen.</p></span>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-creator">
+                        <h2 class="h5">Rezept erstellt von </h2>
+                        <div class="profile-picture">
+                            <img src="./img/profile.png" class="photo">
+                            <span>Mika</span>
+                        </div>
+    
+    
+                    </div>
+    </section>
+
+    <div w3-include-html="./templates/footer.html"></div>
+    
+    </body>
+            
+    
+    </html>

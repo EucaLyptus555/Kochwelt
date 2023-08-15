@@ -1,0 +1,241 @@
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('woff');
+}
+body {
+    margin: 0;
+    font-family: 'Raleway' ;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.bg1 {
+    background-color: rgb(230, 227, 227);
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 100px 0;
+}
+
+.section1 img {
+    width: 600px;
+    margin-left: 200px;
+    margin-right: 48px;
+    border-radius: 16px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 18px;
+    padding: 20px;
+    padding-bottom: 40px;
+
+}
+
+.section1 p {
+    font-size: 16px;
+    margin-bottom: 120px;
+}
+
+.description {
+    margin-right: 48px;
+}
+
+.btn {
+    background-color: rgb(0, 128, 0);
+    color: white;
+    font-size: 18px;
+    padding: 16px 80px 16px 80px;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background-color: rgb(0, 150, 0);
+}
+
+.section2 {
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 96px;
+    
+}
+
+.section2 p {
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+.section2 img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+
+
+}
+
+/*.firsttwo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 49vw;
+}*/
+
+.section3 {
+    margin-left: 200px;
+    margin-right: 150px;
+    padding: 48px 0 100px 0;
+}
+
+.section3 h2 {
+    text-align: center;
+}
+
+.tips {
+    display: flex;
+    justify-content: center;
+}
+
+.tips img {
+    width: 300px;
+    height: 219px;
+    object-fit: cover;
+    border-radius: 16px;
+    padding-left: 16px;
+}
+
+.section3 p {
+    font-size: 16px;
+    padding-right: 16px;
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+    .btn {
+        padding: 12px 50px 12px 50px;
+        font-size: 18px;
+    }
+
+    /*.recipe {
+        flex-direction: column;
+    }*/
+
+   
+
+    
+
+}
+
+@media (max-width: 1100px) {
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section1 h2 {
+        margin-top: 40px;
+    }
+
+    .section1 p {
+        padding: 0 20px 0 20px;
+        margin-bottom: 50px;
+    }
+
+    .recipe {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .recipe img {
+        margin-top: 50px;
+    }
+
+    .tips p {
+        font-size: 14px;
+    }
+
+    .section3 {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 950px) {
+    .tips {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section1 img {
+        margin-left: 48px;
+    }
+
+    .section3 {
+        margin: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section1 img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .section1 p {
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+
+    .section2 p {
+        font-size: 16px;
+    }
+
+    .section3 p {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .section1 img {
+        width: 200px;
+        
+    
+    }
+
+    .section2 img {
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    .description {
+        margin-right: 0;
+    }
+
+    .section3 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
